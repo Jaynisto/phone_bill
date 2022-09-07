@@ -40,6 +40,12 @@ app.get('/',(req, res)=>{
     res.render("index");
 });
 
+app.get('/price_plans', async (req, res)=>{
+    res.render("price_plans");
+});
+
+
+
 //Initializing server
 const PORT = process.env.PORT || 2000;
 app.listen(PORT, (req, res)=>{
