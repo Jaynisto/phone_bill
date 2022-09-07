@@ -40,9 +40,13 @@ app.get('/',(req, res)=>{
     res.render("index");
 });
 
-app.get('/price_plans', async (req, res)=>{
+app.get('/price_plans',(req, res)=>{
     res.render("price_plans");
 });
+
+app.get('/link_user', (req,res)=>{
+    res.render("link_user");
+})
 
 
 
